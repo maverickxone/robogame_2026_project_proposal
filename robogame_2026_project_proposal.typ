@@ -22,23 +22,26 @@
 #table(
   columns: (1fr, 4fr),
   inset: 8pt,
-  [*参赛内容*], [□ 高楼建造机器人   #h(4em) □ 智能运维机器人],
+  [*参赛内容*], [☑ 高楼建造机器人   #h(4em) □ 智能运维机器人],
   [*队伍名称*], [少微摸个鱼队],
   [*指导老师姓名*], [叶回春],
-  [*电子邮箱*], [huichun@ustc.edu.cn],
-  [*老师签字*], [],
+  [*电子邮箱*], [huichun\@ustc.edu.cn],
+  [*老师签字*], [叶回春],
 )
 
 #par(first-line-indent: 0pt)[*参赛队信息：*]
 
+#let wrap-email(addr) = addr.replace("@", "@\u{200b}").replace(".", ".\u{200b}")
+
 #table(
-  columns: (1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr),
+  columns: (0.75fr, 0.9fr, 1.45fr, 1.25fr, 1.45fr, 2.15fr, 0.75fr),
+  inset: 4pt,
   table.header([*职务*], [*姓名*], [*学号*], [*院系*], [*手机*], [*学校邮箱*], [*备注*]),
-  [队长], [张沁媛], [PB25061240], [少年班学院], [17399666212], [zhangqinyuan@mail.ustc.edu.cn], [],
-  [队员], [李璟豪], [PB23000135], [少年班学院], [15951088967], [lijinghao@mail.ustc.edu.cn], [],
-  [队员], [赵文凯], [PB23000209], [少年班学院], [13153177049], [zhwk23@mail.ustc.edu.cn], [],
-  [队员], [曾昕雅], [PB25061201], [少年班学院], [13787151629], [cinya@mail.ustc.edu.cn], [],
-  [队员], [鲁铭泽], [PB25231856], [微电子学院], [18207980804], [maverickxone@mail.ustc.edu.cn], [],
+  [队长], [张沁媛], [PB25061240], [少年班学院], [17399666212], [#wrap-email("zhangqinyuan@mail.ustc.edu.cn")], [],
+  [队员], [李璟豪], [PB23000135], [少年班学院], [15951088967], [#wrap-email("lijinghao@mail.ustc.edu.cn")], [],
+  [队员], [赵文凯], [PB23000209], [少年班学院], [13153177049], [#wrap-email("zhwk23@mail.ustc.edu.cn")], [],
+  [队员], [曾昕雅], [PB25061201], [少年班学院], [13787151629], [#wrap-email("cinya@mail.ustc.edu.cn")], [],
+  [队员], [鲁铭泽], [PB25231856], [微电子学院], [18207980804], [#wrap-email("maverickxone@mail.ustc.edu.cn")], [],
 )
 
 #par(first-line-indent: 0pt)[*参赛承诺：*]
@@ -49,7 +52,7 @@
 
 所有参赛队员（签字）：
 
-#v(4em)
+#image("assets/签名.jpg", width: 90%)
 
 #par(first-line-indent: 0pt)[备注：]
 
@@ -92,8 +95,8 @@
 #grid(
   columns: (auto, 1fr),
   column-gutter: 0.5em,
-  [类别：], [□ 高楼建造机器人\ 
-  □ 家庭服务机器人],
+  [类别：], [☑ 高楼建造机器人\ 
+  □ 智能运维机器人],
 )
 
 #v(2em)
@@ -137,7 +140,7 @@
 #v(1em)
 
 #align(right)[参赛队员（签字）：]
-#align(right)[年 #h(2em) 月 #h(2em) 日]
+#align(right)[2026年 5 月 10 日]
 
 #pagebreak()
 
@@ -171,7 +174,7 @@
 
 #align(center)[
   #grid(
-    columns: (6em, 16em),
+    columns: (8em, 18em),
     column-gutter: 1em,
     row-gutter: 1em,
     [#align(right)[小组成员#sym.colon]], [张沁媛，李璟豪，赵文凯，曾昕雅，鲁铭泽],
@@ -198,7 +201,9 @@
 
 == 队名介绍
 
+本团队取名“少微摸个鱼”，名称巧用谐音与专业缩写，寓意深远：“少”与“微”分别代表了团队成员的背景——由来自少年班学院及来自微电子学院的同学跨学科组建而成。
 
+虽名为“摸个鱼”，实则展现了我们在严谨的科研态度下，保持着松弛、灵动且富有想象力的创作心态。团队融合了少年班学子广博的数理底蕴与微电子专业扎实的硬件设计能力，在电控、机械、算法等多领域优势互补。我们致力于将天马行空的创意转化为稳健的机器人实体，在比赛中突破思维边界，用“灵机一动”的智慧去解决最硬核的技术挑战。
 
 == 成员介绍与分工
 
@@ -437,7 +442,7 @@
   [电路],[急停开关],[1],[10],[10],
   [电路],[电机],[4],[300],[1200],
   [],[],[],[],[],
-  [*合计*], table.cell(colspan:7 )[],
+  [*合计*], table.cell(colspan: 4 )[],
 )
 
 #pagebreak()
